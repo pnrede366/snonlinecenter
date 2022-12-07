@@ -1,0 +1,7 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 8% 90%;
+  &--grid {
+    grid-template-columns: 20% 80%;
+  }
+}

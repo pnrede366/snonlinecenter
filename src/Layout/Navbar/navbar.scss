@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #dfe9f5;
+}
+.fake-nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 870px;
+  left: 0;
+  background-color: #fff;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  //   position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  background-color: #fff;
+  width: 90px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span {
+  font-weight: bold;
+  padding: 16px 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.logo__wrapper {
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.fas {
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+  /* display: flex; */
+}
+.nav-item {
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+.logo__wrapper:hover {
+  background: #dfe9f5;
+}
+.navFullWidth {
+  width: 290px;
+  padding-right: 100px;
+  transition: all 0.5 ease;
+}
+.logo-img {
+  margin-top: 20px;
+}
+.navbar-item {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+.bi {
+  color: rgb(85, 83, 83);
+  /* font-size: 14px; */
+  display: table;
+  /* width: 300px; */
+  padding: 10px;
+}
+.bi:hover {
+  display: table;
+  background: #dfe9f5;
+}
+@media (min-width: 800px) {
+  .fake-nav {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar-2 {
+    display: none;
+  }
+  .main {
+    display: flex;
+
+    flex-direction: column;
+    gap: 30px;
+  }
+  .fake-nav {
+    margin-top: 740px;
+  }
+}
